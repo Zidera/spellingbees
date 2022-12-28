@@ -1,0 +1,108 @@
+.gameboard{
+  padding: 0;
+  
+
+}
+
+.honeycomb{
+  position: relative;
+  right: 40rem;
+  
+  
+}
+.hexagon:first-child{
+   
+    top: 50%;
+    left: 50%;
+    transform: rotate(90deg);
+}
+
+.hexagon:nth-child(2){
+  top: 0.2rem;
+  left: 50%;
+  transform: rotate(90deg);
+  background-color:  #f7da21;
+
+}
+
+.hexagon:nth-child(3){
+  bottom: -0.4rem;
+  left: 50%;
+  transform: rotate(90deg);
+}
+
+.hexagon:nth-child(4){
+  top: -0.4rem;
+  left: 44.2%;
+  transform: translate(0, -450%) rotate(90deg);
+
+}
+
+.hexagon:nth-child(5){
+  top: -0.2rem;
+  left: 44.2%;
+  transform: translate(0, -450%) rotate(90deg);
+
+}
+
+.hexagon:nth-child(6){
+  top: -0.8rem;
+  left: 55.85%;
+  transform: translate(0, -809%) rotate(90deg);
+
+}
+
+.hexagon:nth-child(7){
+  top: -0.6rem;
+  left: 55.85%;
+  transform: translate(0, -809%) rotate(90deg);
+
+}
+
+.hexagon:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-bottom: 1.9rem solid #e6e6e6;
+  border-left: 3.25rem solid transparent;
+  border-right: 3.25rem solid transparent;
+  position: absolute;
+  top: -1.875rem;
+}
+.hexagon:nth-child(2):before {
+   border-bottom: 1.9rem solid #f7da21;
+}
+.hexagon:nth-child(2):after {
+  border-top: 1.9rem solid #f7da21;
+}
+
+.hexagon {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  width: 6.5rem;
+  height: 3.5rem;
+  background-color: #e6e6e6;
+  position: relative;
+  padding: 0;
+  margin:3rem;
+  
+}
+.hexagon span{
+  font-weight: 700;
+  position: absolute;
+  top:0.5rem;
+  font-size: 2rem;
+  transform: rotate(-90deg);
+}
+
+.hexagon:after {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-top: 1.875rem solid #e6e6e6;
+  border-left: 3.25rem solid transparent;
+  border-right: 3.25rem solid transparent;
+  position: absolute;
+  bottom: -1.875rem;
+}
