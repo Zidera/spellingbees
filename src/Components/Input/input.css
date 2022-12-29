@@ -1,6 +1,12 @@
 .input-messages{
   margin-top: 1rem;
   margin-left: 7.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr
+}
+
+.input{
+
 }
 
 .invisible{

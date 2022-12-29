@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { generateLetters } from '../../Features/generateLetters';
-import WordList from '../WordList/WordList';
 import Buttons from '../Buttons/Buttons';
 import Input from '../Input/Input';
 import './Gameboard.css'
@@ -18,7 +17,6 @@ const GameBoard: React.FC = () => {
         ))}
       </div>
       <Buttons/>
-      <WordList/>
     </div>
 
   );
